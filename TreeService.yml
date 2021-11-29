@@ -1,4 +1,4 @@
-student-service-greeting: 'Welcome to Student service'
+student-service-greeting: 'Welcome to Tree service'
 
 # General config for student service and faculty service
 eureka:
