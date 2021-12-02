@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: API-GATEWAY
+
+  cloud:
+    gateway:
+      routes:
+        - id: GardenService
+          uri: lb://GardenService
+          predicates:
+            - Path=/api/gardens/**
+        - id: TreeService
+          uri: lb://TreeService
+          predicates:
+            - Path=/api/trees/**
