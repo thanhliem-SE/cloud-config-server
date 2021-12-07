@@ -1,7 +1,14 @@
+# General config for student service and faculty service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ec2-54-179-25-25.ap-southeast-1.compute.amazonaws.com:8761/eureka
+  instance:
+    preferIpAddress: true
+
 spring:
   application:
     name: API-GATEWAY
-
   cloud:
     gateway:
     
@@ -14,9 +21,4 @@ spring:
           uri: lb://TreeService
           predicates:
             - Path=/api/trees/**
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://ec2-54-179-25-25.ap-southeast-1.compute.amazonaws.com:8761/eureka
-  instance:
-    preferIpAddress: true
+
