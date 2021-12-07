@@ -13,3 +13,9 @@ spring:
           uri: lb://TreeService
           predicates:
             - Path=/api/trees/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://ec2-54-179-25-25.ap-southeast-1.compute.amazonaws.com:8761/eureka
+  instance:
+    preferIpAddress: true
