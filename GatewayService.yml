@@ -4,6 +4,7 @@ spring:
 
   cloud:
     gateway:
+    
       routes:
         - id: GardenService
           uri: lb://GardenService
@@ -16,6 +17,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://ec2-54-179-25-25.ap-southeast-1.compute.amazonaws.com:8761/eureka
+      defaultZone: http://ec2-54-179-25-25.ap-southeast-1.compute.amazonaws.com:8761/eureka
   instance:
     preferIpAddress: true
