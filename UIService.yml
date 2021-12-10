@@ -1,9 +1,2 @@
-student-service-greeting: 'Welcome to UI service'
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://ec2-54-179-190-119.ap-southeast-1.compute.amazonaws.com:8761/eureka
-  instance:
-    preferIpAddress: true
 linkGateway: http://ec2-18-141-24-23.ap-southeast-1.compute.amazonaws.com:8282
