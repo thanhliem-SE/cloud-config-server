@@ -19,10 +19,9 @@ resilience4j:
     instances:
       RateLimiter:
         limitForPeriod: 10
-        limitRefreshPeriod: 20s
+        limitRefreshPeriod: 5s
         timeoutDuration: 1s
-        registerHealthIndicator: true
-        eventConsumerBufferSize: 50
+
 
 management:
   endpoints:
