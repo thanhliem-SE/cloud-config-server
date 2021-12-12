@@ -4,7 +4,7 @@ faculty-service-greeting: 'Welcome to Graden service'
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://ec2-54-179-190-119.ap-southeast-1.compute.amazonaws.com:8761/eureka
   instance:
     preferIpAddress: true
 
